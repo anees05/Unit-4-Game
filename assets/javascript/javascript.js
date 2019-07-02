@@ -18,12 +18,14 @@ var resetGame = function () {
     $(".crystals").empty();
 
     var images = [
-        "https://www.amazon.com/Mining-Crystals-Cartoon-Vinyl-Sticker/dp/B07CJY1YF6?th=1 ", 
-        "https://www.amazon.com/Mining-Crystals-Cartoon-Vinyl-Sticker/dp/B07CJY5V6L?th=1", 
-        "https://www.amazon.com/Mining-Crystals-Cartoon-Vinyl-Sticker/dp/B07CK8D1B8?th=1 ", 
-        "https://www.amazon.com/Mining-Crystals-Cartoon-Vinyl-Sticker/dp/B07CJY21QZ?th=1 "];
+        "https://images-na.ssl-images-amazon.com/images/I/6171vUCgyUL._SL1312_.jpg ", 
+        "https://images-na.ssl-images-amazon.com/images/I/61hizORNXxL._SL1312_.jpg", 
+        "https://images-na.ssl-images-amazon.com/images/I/61Ls5sXOvnL._SL1314_.jpg ", 
+        "https://images-na.ssl-images-amazon.com/images/I/614ByoY%2B5DL._SL1313_.jpg "];
 
-    randomResult = Math.floor(Math.random() * 111) + 19;
+
+
+    randomResult = Math.floor(Math.random() * 102) + 19;
 
     $("#result").html('Random Result: ' + randomResult);
     for (var i = 0; i < 4; i++) {
@@ -35,10 +37,13 @@ var resetGame = function () {
         crystal.attr({
             "class": 'crystal',
             "data-random": random
-        });
 
+        });
+            
+            
         crystal.css({
-            "background-picture":"url('" + images[i] + "') ",
+            "background-image":"url('" + images[i] + "')",
+            "background-size":"cover"
             
         })
         // crystal.html(random);

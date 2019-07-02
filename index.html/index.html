@@ -10,11 +10,39 @@
 
     <link rel="stylesheet" href="../assets/css/reset.css">
 
-    <link rel="stylesheet" href="../assets/css/style.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
 
 
 </head>
+
 <body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1><strong>Crystal Collector</strong></h1>
+            </div>
+            <div class="jumbotron">
+                <div class="container">
+
+                    <p>You will be given a random number at the start of the game.</p>
+                    <br>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your total score.</p>
+                    <br>
+                    <p>You will win the game by matching your total score to the random number. You lose if your total
+                        score goes about the random number.</p>
+                    <br>
+                    <p>The value of each crystal is hidden from you until it is clicked.</p>
+                    <br>
+                    <p>Each time a new game starts, the game with change the random number and the value of the
+                        crystals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <p id="result"></p>
 
@@ -22,10 +50,12 @@
 
     </div>
 
+    <!-- <button class="crystal"><img src="assets/images/61hizORNXxl.SL1312.jpg"></button> -->
     <p id="previous"></p>
 
     <p id="win"></p>
     <p id="loss"></p>
     <script src="../assets/javascript/javascript.js"></script>
 </body>
+
 </html>
